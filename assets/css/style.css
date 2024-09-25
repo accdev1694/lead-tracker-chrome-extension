@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  min-width: 400px;
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.all-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btns {
+  width: 33%;
+  margin-top: 10px;
+  height: 40px;
+  font-weight: bold;
+  border: 1px solid rgb(27, 68, 27);
+  border-radius: 10px;
+  color: rgb(27, 68, 27);
+}
+
+#input-area {
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: 1px solid rgb(27, 68, 27);
+}
+
+#save-input,
+#clear-all {
+  background-color: rgb(27, 68, 27);
+  color: white;
+}
+
+#save-input:hover,
+#clear-all:hover {
+  background: none;
+  color: rgb(27, 68, 27);
+}
+
+#save-input:active,
+#clear-all:active {
+  background: rgb(183, 183, 183);
+}
+
+#save-tab:hover {
+  background: rgb(27, 68, 27);
+  color: white;
+}
+
+#save-tab:active {
+  background: rgb(57, 98, 57);
+}
