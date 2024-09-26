@@ -28,12 +28,9 @@ clearAllEl.addEventListener("click", () => {
 
 tabBtnEl.addEventListener("click", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    const currentTab = tabs[0];
-    if (currentTab) {
-      leadsList.push(currentTab.url);
-      localStorage.setItem("leadsList", JSON.stringify(leadsList));
-      renderLeads(leadsList);
-    }
+    leadsList.push(tabs[0].url);
+    localStorage.setItem("leadsList", JSON.stringify(leadsList));
+    renderLeads(leadsList);
   });
 });
 
