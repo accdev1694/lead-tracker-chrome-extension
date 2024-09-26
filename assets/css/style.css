@@ -59,3 +59,15 @@ body {
 #save-tab:active {
   background: rgb(57, 98, 57);
 }
+
+#leads-area{
+    text-align: left;
+    font-size: 1rem;
+}
+
+#leads-area ul{
+    list-style: none;
+    /* margin-top: 1px; */
+    padding: 0;
+
+}
