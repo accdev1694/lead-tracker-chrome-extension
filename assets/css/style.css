@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 10px;
   text-align: center;
-  min-width: 400px;
+  min-width: 300px;
   font-size: 2rem;
 }
 
@@ -20,7 +20,7 @@ body {
   width: 33%;
   margin-top: 10px;
   height: 40px;
-  font-weight: bold;
+  font-weight: 800;
   border: 1px solid rgb(27, 68, 27);
   border-radius: 10px;
   color: rgb(27, 68, 27);
@@ -34,32 +34,32 @@ body {
   border: 1px solid rgb(27, 68, 27);
 }
 
-#save-input,
-#clear-all {
+.hov-green{
   background-color: rgb(27, 68, 27);
   color: white;
 }
 
-#save-input:hover,
-#clear-all:hover {
+.hov-green:hover {
   background: none;
   color: rgb(27, 68, 27);
 }
 
-#save-input:active,
-#clear-all:active {
-  background: rgb(183, 183, 183);
+.hov-green:active {
+  background: rgb(216, 216, 216);
+  color: rgb(27, 68, 27);
 }
 
-#save-tab:hover {
-  background: rgb(27, 68, 27);
+#clear-all:hover{
+background: rgb(27, 68, 27);
+color: white;
+
+}
+
+#clear-all:active{
+  background: rgb(36, 90, 36);
   color: white;
-}
-
-#save-tab:active {
-  background: rgb(57, 98, 57);
-}
-
+  
+  }
 #leads-area{
     text-align: left;
     font-size: 1rem;

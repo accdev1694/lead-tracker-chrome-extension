@@ -21,14 +21,18 @@ inputBtnEl.addEventListener('click', () =>{
 })
 
 clearAllEl.addEventListener('click', ()=>{
-  leadsFromLocal = ''
+  localStorage.clear()
   leadsList = []
   renderLeads(leadsList)
 })
 
+tabBtnEl.addEventListener('click', () => {
+  
+})
+
 function renderLeads(leads) {
   leadsAreaEl.textContent = ''
-  for (i = 0; i < leads.length; i++) {
+  for (let i = 0; i < leads.length; i++) {
     let ulEl = document.createElement('ul')
     let liEl = document.createElement('li')
     let anchorEl = document.createElement('a')
