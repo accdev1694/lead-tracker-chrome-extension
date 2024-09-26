@@ -4,7 +4,7 @@ const tabBtnEl = document.getElementById("tab-btn");
 const clearAllEl = document.getElementById("clear-all");
 const inputAreaEl = document.getElementById("input-area");
 const leadsAreaEl = document.getElementById("leads-area");
-const leadsFromLocal = JSON.parse(localStorage.getItem('leadsList'))
+let leadsFromLocal = JSON.parse(localStorage.getItem('leadsList'))
 
 if (leadsFromLocal) {
   leadsList = leadsFromLocal
@@ -20,6 +20,11 @@ inputBtnEl.addEventListener('click', () =>{
   }
 })
 
+clearAllEl.addEventListener('click', ()=>{
+  leadsFromLocal = ''
+  leadsList = []
+  renderLeads(leadsList)
+})
 
 function renderLeads(leads) {
   leadsAreaEl.textContent = ''
