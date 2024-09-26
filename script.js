@@ -41,6 +41,7 @@ function renderLeads(leads) {
     let liEl = document.createElement("li");
     let anchorEl = document.createElement("a");
     anchorEl.setAttribute("href", leads[i]);
+    anchorEl.setAttribute('target', '_blank')
     anchorEl.textContent = leads[i];
     // append to dom
     liEl.append(anchorEl);
